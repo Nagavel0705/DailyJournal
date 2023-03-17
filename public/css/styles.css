@@ -40,21 +40,38 @@ html {
 }
 
 .compose{
+  background-color: #1abc9c;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px auto;
   padding: 10px;
-  color: black;
+  color: white;
   border-radius: 10px;
   width: 10%;
   box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.3);
 }
 
 .compose:hover{
-  color: #1abc9c;
+  color: black;
 }
 
-.compose::after{
-  outline: #1abc9c;
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+.del{
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  margin-left: 10px;
+  padding: auto;
+  font-size: large;
+  height: 35px;
+  width: 35px;
+  border-radius: 10px;
+  color: red;
+  background-color: white;
+  outline: none;
 }

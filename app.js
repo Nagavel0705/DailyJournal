@@ -81,6 +81,12 @@ async function main(){
     });
   
   });
+
+  app.post("/delete", async function(req, res){
+    const idToBeDeleted = req.body.del;
+    await Post.deleteOne({_id: idToBeDeleted});
+    res.redirect("/");
+  })
   
   app.listen(3000, function() {
     console.log("Server started on port 3000");

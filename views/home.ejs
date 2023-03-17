@@ -6,7 +6,13 @@
 
   <%  posts.forEach(function(post){ %>
 
-    <h1><%=post.title%></h1>
+    <div>
+      <h1><%=post.title%> 
+        <form action="/delete" method="post">
+          <button type="submit" name="del" class="del" value="<%=post._id%>"> <i class="fa-solid fa-trash"></i> </button>
+        </form> 
+      </h1>
+    </div>
     <p>
     <%=post.content.substring(0, 100) + " ..."%>
     <a href="/posts/<%=post._id%>">Read More</a>
